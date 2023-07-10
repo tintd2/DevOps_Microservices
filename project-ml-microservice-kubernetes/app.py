@@ -6,7 +6,11 @@ import pandas as pd
 from sklearn.externals import joblib
 from sklearn.preprocessing import StandardScaler
 
+import os
+ 
 app = Flask(__name__)
+
+logging.basicConfig(filename=os.getenv('LOG_FILE_PATH'),level=logging.DEBUG)
 LOG = create_logger(app)
 LOG.setLevel(logging.INFO)
 
