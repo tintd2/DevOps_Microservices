@@ -36,7 +36,7 @@ WORKDIR /app
 COPY app.py /app/
 COPY requirements.txt /app/
 COPY model_data /app/model_data
-# COPY output_txt_files /app/output_txt_files
+COPY output_txt_files /app/output_txt_files
 
 # Set the log file path
 ENV LOG_FILE_PATH /app/output_txt_files/docker_out.txt

@@ -11,8 +11,8 @@ dockerpath=dinhtin12/devops
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+# docker login --username dinhtin12
 
 # Step 3:
 # Push image to a docker repository
-docker push dinhtin12/devops:0.0.1
-
+docker push dinhtin12/devops:1.0.0
